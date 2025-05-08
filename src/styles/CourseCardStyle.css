@@ -1,0 +1,99 @@
+/* CourseCardStyle.css */
+
+.course-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 20%;
+}
+@media screen and (max-width: 768px) {
+    .course-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-card-content {
+    padding: 6px;
+}
+
+.course-card-title {
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.course-card-description {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.course-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.course-card-footer .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.course-card-footer .enroll-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-card-footer .enroll-button:hover {
+    background-color: #0056b3;
+}
+.course-card-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.course-card-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+}
+.course-card-image {
+    object-fit: scale-down;
+    object-position: top;
+}
